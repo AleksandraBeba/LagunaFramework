@@ -29,6 +29,7 @@ public class TestPorucivanjeKnjige extends BaseTest {
         Thread.sleep(5000);
         Assert.assertTrue(wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[text()=\"Izaberite način plaćanja i dostave:\"]"))).isDisplayed());
         System.out.println("Bravo legendoooo");
+        System.out.println("Ovo radi");
 
 
 
