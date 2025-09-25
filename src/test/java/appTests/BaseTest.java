@@ -22,7 +22,9 @@ public class BaseTest {
 
     @BeforeClass
     public static void beforeAll() {
+
         driver = new EdgeDriver();
+
         wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(30));
 //        maksimalo cekanje ucitavanja stranice
