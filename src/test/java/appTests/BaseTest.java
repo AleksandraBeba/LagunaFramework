@@ -7,6 +7,7 @@ import org.junit.BeforeClass;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import pages.*;
 
@@ -21,7 +22,7 @@ public class BaseTest {
 
     @BeforeClass
     public static void beforeAll() {
-        driver = new ChromeDriver();
+        driver = new EdgeDriver();
         wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(30));
 //        maksimalo cekanje ucitavanja stranice
